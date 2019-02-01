@@ -1,0 +1,26 @@
+[Pi-mote 1]
+enabled=true
+channel=1
+module=cayenne_energenie
+class=CayenneEnergenie
+init_args={"socket":1, "initial_state":false}
+read=get_state
+write=set_state
+
+[Pi-mote 2]
+inherit=Pi-mote 1
+enabled=true
+channel=2
+init_args={"socket":2, "initial_state":false}
+
+[Pi-mote 3]
+inherit=Pi-mote 1
+enabled=true
+channel=3
+init_args={"socket":3, "initial_state":false}
+
+[Pi-mote 4]
+inherit=Pi-mote 1
+enabled=true
+channel=4
+init_args={"socket":4, "initial_state":false}
